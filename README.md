@@ -19,7 +19,7 @@ The application consists of an express web server (server folder) and a react ap
 
 ## Todo
 * Do some testing with Jest and Supertest.
-* Design the UI a little bit better in terms of css (the functionality is there).
+* Design the UI a little bit better in terms of css (the functionality is there). Especially the 'Sign in' and 'Sign up' pages/components...
 
 # Running application example
 ## Installing the app
