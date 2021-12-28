@@ -1,0 +1,12 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: #272343;
+    margin: 0px;
+}
+
+.navbar-title {
+    font-style: italic;
+    color: #FFFFFF;
+}

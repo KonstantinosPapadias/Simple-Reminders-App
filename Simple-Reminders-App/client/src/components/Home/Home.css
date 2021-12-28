@@ -1,0 +1,32 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.signout-button {
+    width: 100px;
+    height: 30px;
+    font-style: italic;
+}
+
+.home-container {
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+}
+
+.home-header {
+    font-style: italic;
+    color: #272343;
+}
+
+.reminders-container {
+    display: flex;
+    flex-direction: column;
+}

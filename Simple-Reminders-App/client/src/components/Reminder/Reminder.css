@@ -1,0 +1,16 @@
+.reminder-container {
+    width: 200px;
+    height: 100px;
+    background-color: #E3F6F5;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid black;
+    font-style: italic;
+}
+
+.button-container  {
+    display: flex;
+    flex-direction: row-reverse;
+}

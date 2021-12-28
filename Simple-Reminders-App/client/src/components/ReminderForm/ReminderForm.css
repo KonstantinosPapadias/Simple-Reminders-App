@@ -1,0 +1,9 @@
+.reminder-form-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.reminder-form {
+    border: 1px solid black;
+}
