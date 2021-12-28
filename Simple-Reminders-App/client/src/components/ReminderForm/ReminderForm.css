@@ -1,9 +1,14 @@
 .reminder-form-container {
     display: flex;
     flex-direction: column;
-    
 }
 
-.reminder-form {
-    border: 1px solid black;
+.reminder-form-input {
+    height: 30px;
+    width: 150px;
+}
+
+.create-reminder-button {
+    height: 25px;
+    width: 158px;
 }

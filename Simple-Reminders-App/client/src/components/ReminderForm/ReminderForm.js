@@ -34,7 +34,6 @@ function ReminderForm(props) {
                                         updateReminders={props.updateReminders}
                             />;
             props.updateReminders(reminders => [...reminders, savedReminder]);
-            event.target.value = "";
         } catch (err) {
             console.log(err);
         }
@@ -42,12 +41,8 @@ function ReminderForm(props) {
 
     return (
         <div className='reminder-form-container'>
-            <div className='reminder-form'>
-                <input className='reminder-form-input' type="text" name="text" placeholder='Enter new reminder...' onChange={handleTextChange} />
-            </div>
-            <div className='create-reminder-button'>
-                <button onClick={handleButtonClick}>Create new reminder</button>
-            </div>
+            <input className='reminder-form-input' type="text" name="text" placeholder='Enter new reminder...' onChange={handleTextChange} />
+            <button className='create-reminder-button' onClick={handleButtonClick}>Create new reminder</button> 
         </div>
     )
 }

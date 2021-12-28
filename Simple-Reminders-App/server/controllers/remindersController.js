@@ -33,7 +33,12 @@ async function postReminder(req, res, next) {
 
 async function updateReminder(req, res, next) {
     try {
-
+        const {reminderId} = req.params;
+        const {text} = req.body; 
+        const reminderToUpdatePos = req.user.reminders.findIndex(reminder => reminder.id === reminderId);
+        req.user.reminders[reminderToUpdatePos].text = text;
+        await req.user.save();
+        res.send({updatedReminder: req.user.reminders[reminderToUpdatePos]})
     } catch (err) {
         next(err);
     }
@@ -43,7 +48,7 @@ async function deleteAllReminders(req, res, next) {
     try {
         req.user.reminders = [];
         await req.user.save();
-        res.send({ok: true});
+        res.send({reminders: req.user.reminders});
     } catch (err) {
         next(err);
     }

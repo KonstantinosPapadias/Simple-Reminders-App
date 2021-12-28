@@ -30,9 +30,30 @@ function Home() {
         getReminders();
     }, []);
 
+    async function deleteAllReminders(event) {
+        event.preventDefault();
+        const request = {
+            method: "delete",
+            url: "http://localhost:5000/api/reminders",
+            withCredentials: true,
+            data: {}
+        }
+        try {
+            const response = await axios(request);
+            const clearedReminders = response.data.reminders;
+            setReminders(clearedReminders);
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
     return (
-        <div className='home-container'>
+        <div className='home-page'>
                 <Navbar />
+                <div className='header-button-container'>
+                    <button className='delete-all-reminders-button' onClick={deleteAllReminders}>Clear all reminders</button>
+                    <h2 className='home-header'>Remaining reminders: {reminders.length}</h2>
+                </div>
                 <div className='home-body-container'>
                     <ReminderForm updateReminders={setReminders} />
                     <div className='reminders-container'>{reminders}</div>
