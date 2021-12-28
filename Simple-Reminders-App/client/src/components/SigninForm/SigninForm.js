@@ -4,11 +4,6 @@ import "./SigninForm.css";
 
 export default function SigninForm() {
 
-    function redirectToSignupForm(event) {
-        event.preventDefault();
-        console.log("button clicked, should redirect to /signup...");
-    }
-
     return (
         <div className='page-container'>
             <div className='form-container'>
