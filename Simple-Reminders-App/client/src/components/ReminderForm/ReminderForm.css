@@ -1,14 +1,33 @@
 .reminder-form-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.reminder-form-input-container {
+    background-color: white;
+    border: 0.5px solid gray;
+    border-radius: 4px;
 }
 
 .reminder-form-input {
     height: 30px;
-    width: 150px;
+    width: 200px;
+    margin: 5px;
+    border: none;
+    outline: none;
 }
 
 .create-reminder-button {
-    height: 25px;
-    width: 158px;
+    height: 30px;
+    width: 300px;
+    border: 0.5px solid gray;
+    border-radius: 4px;
+    background-color: #1E56A0;
+    color: white;
+}
+
+.create-reminder-button:hover {
+    cursor: pointer;
+    background-color: #D6E4F0;
 }

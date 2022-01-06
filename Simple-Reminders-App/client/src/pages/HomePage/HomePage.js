@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
-import Reminder from "../Reminder/Reminder";
-import "./Home.css";
-import Navbar from "../Navbar/Navbar";
-import ReminderForm from '../ReminderForm/ReminderForm';
+import Reminder from "../../components/Reminder/Reminder";
+import Navbar from "../../components/Navbar/Navbar";
+import ReminderForm from '../../components/ReminderForm/ReminderForm';
+import "./HomePage.css";
 
-function Home() {
+function HomePage() {
     const [reminders, setReminders] = useState([]);
 
     useEffect(() => {
@@ -62,4 +62,4 @@ function Home() {
     )
 }
 
-export default Home
+export default HomePage

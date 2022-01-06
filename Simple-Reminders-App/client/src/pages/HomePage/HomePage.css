@@ -33,4 +33,12 @@
 .delete-all-reminders-button {
     margin: 20px;
     border-radius: 4px;
+    background-color: white;
+    width: 150px;
+    height: 30px;
+}
+
+.delete-all-reminders-button:hover {
+    cursor: pointer;
+    background-color: #D6E4F0;
 }

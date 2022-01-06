@@ -5,9 +5,13 @@ function Form(props) {
     return (
         <div>
             <form className="form-container" action={props.formAction} method="post">
-                    <input type="text" name="username" placeholder="Username" />
-                    <input type="password" name="password" placeholder="Password" />
-                    <button className="submit-button">Submit</button>
+                <div className='form-input-container'>
+                    <input className='form-input' type="text" name="username" placeholder="Username" />
+                </div>
+                <div className='form-input-container'>
+                    <input className='form-input' type="password" name="password" placeholder="Password" />
+                </div>
+                <button className="submit-button">Submit</button>
             </form>
         </div>
     )

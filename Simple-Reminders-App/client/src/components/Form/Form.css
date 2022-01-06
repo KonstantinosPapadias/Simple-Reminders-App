@@ -1,4 +1,37 @@
 .form-container {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.form-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid gray;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.form-input {
+    height: 30px;
+    width: 300px;
+    margin: 5px;
+    border: none;
+    outline: none;
+}
+
+.submit-button {
+    height: 35px;
+    border-radius: 4px;
+    border: 0.5px solid gray;
+    background-color: #1877f2;
+    color: white;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: #D6E4F0;
 }

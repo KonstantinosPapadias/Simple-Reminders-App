@@ -1,0 +1,50 @@
+.page-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+}
+
+.signin-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    font-style: italic;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.create-new-account-button {
+    margin-bottom: 20px;
+    background-color: #42b72a;
+    border-radius: 4px;
+    color: white;
+    width: 200px;
+    height: 30px;
+}
+
+.create-new-account-button:hover {
+    cursor: pointer;
+    background-color: #D6E4F0;
+}
+
+.signup-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 0.5px solid gray;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.signup-form-little-text {
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

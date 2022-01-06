@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {Routes, Route} from "react-router-dom";
 import axios from "axios";
-import Home from "./components/Home/Home";
-import SigninForm from './components/SigninForm/SigninForm';
-import SignupForm from "./components/SignupForm/SignupForm";
+import HomePage from "../pages/HomePage/HomePage";
+import SigninPage from '../pages/SigninPage/SigninPage';
+import "./App.css";
 
 function App() {
   const [userIsAuthenticated, setUserIsAuthenticated] = useState(false);
@@ -30,8 +30,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={userIsAuthenticated? <Home /> : <SigninForm />} />
-        <Route path="/signup" element={ <SignupForm />}/>
+        <Route path="/" element={userIsAuthenticated? <HomePage /> : <SigninPage />} />
       </Routes>
     </div>
   );

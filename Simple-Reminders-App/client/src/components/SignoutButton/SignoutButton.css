@@ -3,4 +3,10 @@
     color: black;
     height: 30px;
     width: 100px;
+    border-radius: 4px;
+}
+
+.signout-button:hover {
+    background-color: #D6E4F0;
+    cursor: pointer;
 }
